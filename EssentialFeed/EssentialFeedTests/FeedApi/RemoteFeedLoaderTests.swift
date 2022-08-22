@@ -113,8 +113,10 @@ class RemoteFeedLoaderTests: XCTestCase {
     private func makeSUT(url: URL =  URL(string: "https://a-givel-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
+        
         trackForMemoryLeaks(client)
         trackForMemoryLeaks(sut)
+        
         return (sut, client)
     }
     
@@ -172,7 +174,7 @@ class RemoteFeedLoaderTests: XCTestCase {
                                            httpVersion: nil,
                                            headerFields: nil)!
             
-            messages[index].completion(.success(data,response))
+            messages[index].completion(.success(data, response))
         }
     }
 }
