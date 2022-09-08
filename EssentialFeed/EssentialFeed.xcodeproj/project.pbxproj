@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B03E01C28C9CE630003E0DA /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */; };
 		5B0665DA28B13D6D00B2B4E1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0665D928B13D6D00B2B4E1 /* HTTPClient.swift */; };
 		5B0665DC28B13DAB00B2B4E1 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0665DB28B13DAB00B2B4E1 /* FeedItemsMapper.swift */; };
 		5B21B23328B8A6FE00B576EF /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B23228B8A6FE00B576EF /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		5B0665D928B13D6D00B2B4E1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		5B0665DB28B13DAB00B2B4E1 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		5B21B23228B8A6FE00B576EF /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				5B0665D928B13D6D00B2B4E1 /* HTTPClient.swift */,
 				5B0665DB28B13DAB00B2B4E1 /* FeedItemsMapper.swift */,
 				5B21B23428B8B6C900B576EF /* URLSessionHTTPClient.swift */,
+				5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */,
 			);
 			path = FeedApi;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				5B42A80D28C8794900B29B47 /* FeedStore.swift in Sources */,
 				5B21B23528B8B6C900B576EF /* URLSessionHTTPClient.swift in Sources */,
+				5B03E01C28C9CE630003E0DA /* RemoteFeedItem.swift in Sources */,
 				5B86F0E928AD15A900794424 /* RemoteFeedLoader.swift in Sources */,
 				5B0665DA28B13D6D00B2B4E1 /* HTTPClient.swift in Sources */,
 				5B86F0E228ACC3B000794424 /* FeedLoader.swift in Sources */,
