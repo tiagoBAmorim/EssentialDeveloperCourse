@@ -8,15 +8,15 @@
 import UIKit
 import EssentialFeed
 
-final class FeedViewController: UITableViewController {
+final public class FeedViewController: UITableViewController {
     private var loader: FeedLoader?
     
-    convenience init(loader: FeedLoader) {
+    public convenience init(loader: FeedLoader) {
         self.init()
         self.loader = loader
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         refreshControl = UIRefreshControl()
