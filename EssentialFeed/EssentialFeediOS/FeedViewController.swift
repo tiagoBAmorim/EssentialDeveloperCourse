@@ -26,6 +26,8 @@ final class FeedViewController: UITableViewController {
     }
     
     @objc private func load() {
-        loader?.load { _ in }
+        loader?.load { [weak self] _ in
+            self?.refreshControl?.endRefreshing()
+        }
     }
 }
