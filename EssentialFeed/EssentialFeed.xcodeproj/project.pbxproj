@@ -19,6 +19,7 @@
 		5B3D5BE328DAEEC900AB2218 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D5BE128DAEEC900AB2218 /* FeedStore.xcdatamodeld */; };
 		5B42A80B28C878DC00B29B47 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42A80A28C878DC00B29B47 /* LocalFeedLoader.swift */; };
 		5B42A80D28C8794900B29B47 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42A80C28C8794900B29B47 /* FeedStore.swift */; };
+		5B4C4CDF28F3FADA000C2F70 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB32E728EEB8620094B90D /* FeedViewController.swift */; };
 		5B86F0CA28ACC2F000794424 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F0C928ACC2F000794424 /* EssentialFeed.docc */; };
 		5B86F0D028ACC2F000794424 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B86F0C528ACC2F000794424 /* EssentialFeed.framework */; };
 		5B86F0D628ACC2F000794424 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B86F0C828ACC2F000794424 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,8 @@
 		5B86F0E228ACC3B000794424 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F0E128ACC3B000794424 /* FeedLoader.swift */; };
 		5B86F0E528ACC56900794424 /* LoadFeedFromRemoteUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F0E428ACC56900794424 /* LoadFeedFromRemoteUseCasesTests.swift */; };
 		5B86F0E928AD15A900794424 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F0E828AD15A900794424 /* RemoteFeedLoader.swift */; };
+		5BA7A0DC28F00B11001CD37C /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B86F0C528ACC2F000794424 /* EssentialFeed.framework */; platformFilter = ios; };
+		5BA7A0DD28F00B11001CD37C /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B86F0C528ACC2F000794424 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BAB32D428EEB5260094B90D /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB32D328EEB5260094B90D /* EssentialFeediOS.docc */; };
 		5BAB32DA28EEB5260094B90D /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAB32D028EEB5250094B90D /* EssentialFeediOS.framework */; };
 		5BAB32E028EEB5260094B90D /* EssentialFeediOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BAB32D228EEB5260094B90D /* EssentialFeediOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,6 +69,13 @@
 			remoteGlobalIDString = 5B86F0C428ACC2F000794424;
 			remoteInfo = EssentialFeed;
 		};
+		5BA7A0DE28F00B11001CD37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B86F0BC28ACC2F000794424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B86F0C428ACC2F000794424;
+			remoteInfo = EssentialFeed;
+		};
 		5BAB32DB28EEB5260094B90D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5B86F0BC28ACC2F000794424 /* Project object */;
@@ -88,6 +98,20 @@
 			remoteInfo = EssentialFeed;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BA7A0E028F00B11001CD37C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BA7A0DD28F00B11001CD37C /* EssentialFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
@@ -160,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA7A0DC28F00B11001CD37C /* EssentialFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +255,7 @@
 				5BAB32D128EEB5260094B90D /* EssentialFeediOS */,
 				5BAB32DD28EEB5260094B90D /* EssentialFeediOSTests */,
 				5B86F0C628ACC2F000794424 /* Products */,
+				5BA7A0DB28F00B11001CD37C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +314,13 @@
 				5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */,
 			);
 			path = FeedApi;
+			sourceTree = "<group>";
+		};
+		5BA7A0DB28F00B11001CD37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5BAB32D128EEB5260094B90D /* EssentialFeediOS */ = {
@@ -454,10 +487,12 @@
 				5BAB32CC28EEB5250094B90D /* Sources */,
 				5BAB32CD28EEB5250094B90D /* Frameworks */,
 				5BAB32CE28EEB5250094B90D /* Resources */,
+				5BA7A0E028F00B11001CD37C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5BA7A0DF28F00B11001CD37C /* PBXTargetDependency */,
 			);
 			name = EssentialFeediOS;
 			productName = EssentialFeediOS;
@@ -679,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4C4CDF28F3FADA000C2F70 /* FeedViewController.swift in Sources */,
 				5BAB32EB28EEB8930094B90D /* FeedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +746,12 @@
 			isa = PBXTargetDependency;
 			target = 5B86F0C428ACC2F000794424 /* EssentialFeed */;
 			targetProxy = 5B86F0D128ACC2F000794424 /* PBXContainerItemProxy */;
+		};
+		5BA7A0DF28F00B11001CD37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 5B86F0C428ACC2F000794424 /* EssentialFeed */;
+			targetProxy = 5BA7A0DE28F00B11001CD37C /* PBXContainerItemProxy */;
 		};
 		5BAB32DC28EEB5260094B90D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -780,6 +822,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -837,6 +880,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -955,7 +999,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -985,7 +1030,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
