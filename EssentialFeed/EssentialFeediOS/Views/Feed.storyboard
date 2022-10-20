@@ -26,7 +26,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="484" id="rD5-dr-4bC" customClass="FeedImageCellTableViewCell" customModule="EssentialFeediOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="484" id="rD5-dr-4bC" customClass="FeedImageCell" customModule="EssentialFeediOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="60.5" width="414" height="484"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rD5-dr-4bC" id="nVB-XH-wdJ">
@@ -74,6 +74,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" title="↻">
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="rD5-dr-4bC" eventType="touchUpInside" id="AWw-R4-X9A"/>
+                                                            </connections>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YDr-Z2-F0S">
                                                             <rect key="frame" x="0.0" y="0.0" width="363" height="363"/>
@@ -117,6 +120,14 @@
                                         <constraint firstItem="a4z-zn-Av2" firstAttribute="top" secondItem="nVB-XH-wdJ" secondAttribute="topMargin" priority="999" constant="6" id="nol-QS-cra"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Rgf-zO-2Yv" id="nYY-vJ-gay"/>
+                                    <outlet property="feedImageCellContainer" destination="5cq-9C-xuQ" id="Qde-pf-RMT"/>
+                                    <outlet property="feedImageRetryButton" destination="2hC-kt-BRe" id="kYw-Tw-PsO"/>
+                                    <outlet property="feedImageView" destination="YDr-Z2-F0S" id="jIG-Q8-zjm"/>
+                                    <outlet property="locationContainer" destination="PC3-SJ-wdW" id="cst-vk-jir"/>
+                                    <outlet property="locationLabel" destination="UDM-Pg-q5X" id="5Vx-D1-6gO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
