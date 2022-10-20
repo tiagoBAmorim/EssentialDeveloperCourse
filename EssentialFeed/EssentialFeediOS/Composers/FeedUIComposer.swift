@@ -14,7 +14,11 @@ public final class FeedUIComposer {
     public static func feedComposeWith(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader) -> FeedViewController {
         let presentationAdapter = FeedLoaderPresentationAdapter(feedLoader: feedLoader)
         let refreshController = FeedRefreshViewController(delegate: presentationAdapter)
-        let feedController = FeedViewController(refreshController: refreshController)
+        
+        let bundle = Bundle(for: FeedViewController.self)
+        let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
+        let feedController = storyboard.instantiateInitialViewController() as! FeedViewController
+        feedController.refreshController = refreshController
         
         presentationAdapter.presenter = FeedPresenter(
             feedView: FeedViewAdapter(controller: feedController, imageLoader: imageLoader),
@@ -26,12 +30,12 @@ public final class FeedUIComposer {
 private final class WeakRefVirtualProxy<T: AnyObject> {
     private weak var object: T?
     
-    init(_ objetct: T) {
-        self.object = objetct
+    init(_ object: T) {
+        self.object = object
     }
 }
 
-extension WeakRefVirtualProxy: FeedLoadinView where T: FeedLoadinView {
+extension WeakRefVirtualProxy: FeedLoadingView where T: FeedLoadingView {
     func display(_ viewModel: FeedLoadingViewModel) {
         object?.display(viewModel)
     }
@@ -83,7 +87,7 @@ private final class FeedLoaderPresentationAdapter: FeedRefreshViewControllerDele
                 self?.presenter?.didFinishLoadingFeed(with: feed)
                 
             case let .failure(error):
-                self?.presenter?.didFinhishLoadingFeed(with: error)
+                self?.presenter?.didFinishLoadingFeed(with: error)
             }
         }
     }

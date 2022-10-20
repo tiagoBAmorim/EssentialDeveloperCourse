@@ -7,7 +7,7 @@
 
 import EssentialFeed
 
-protocol FeedLoadinView {
+protocol FeedLoadingView {
     func display(_ viewModel: FeedLoadingViewModel)
 }
 
@@ -17,9 +17,9 @@ protocol FeedView {
 
 final class FeedPresenter {
     private let feedView: FeedView
-    private let loadingView: FeedLoadinView
+    private let loadingView: FeedLoadingView
     
-    init(feedView: FeedView, loadingView: FeedLoadinView) {
+    init(feedView: FeedView, loadingView: FeedLoadingView) {
         self.feedView = feedView
         self.loadingView = loadingView
     }
@@ -33,7 +33,7 @@ final class FeedPresenter {
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
     
-    func didFinhishLoadingFeed(with error: Error) {
+    func didFinishLoadingFeed(with error: Error) {
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
 }
