@@ -157,6 +157,7 @@
 		5BA93E11290284B800AA1949 /* FeedViewContellerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewContellerTests+Localization.swift"; sourceTree = "<group>"; };
 		5BA93E152902864A00AA1949 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		5BA93E172902867D00AA1949 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Feed.strings"; sourceTree = "<group>"; };
+		5BA93E18290286BA00AA1949 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		5BAB32D028EEB5250094B90D /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB32D228EEB5260094B90D /* EssentialFeediOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeediOS.h; sourceTree = "<group>"; };
 		5BAB32D328EEB5260094B90D /* EssentialFeediOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeediOS.docc; sourceTree = "<group>"; };
@@ -697,6 +698,7 @@
 				en,
 				Base,
 				"pt-PT",
+				el,
 			);
 			mainGroup = 5B86F0BB28ACC2F000794424;
 			productRefGroup = 5B86F0C628ACC2F000794424 /* Products */;
@@ -898,6 +900,7 @@
 			children = (
 				5BA93E152902864A00AA1949 /* en */,
 				5BA93E172902867D00AA1949 /* pt-PT */,
+				5BA93E18290286BA00AA1949 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
