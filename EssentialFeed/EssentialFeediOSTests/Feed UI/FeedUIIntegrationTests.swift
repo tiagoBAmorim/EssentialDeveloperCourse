@@ -145,7 +145,7 @@ class FeedUIIntegrationTests: XCTestCase {
         let view1 = sut.simulateFeedImageViewVisible(at: 1)
         
         XCTAssertEqual(view0?.renderedImage, .none, "Expected no image for first view while loading first image")
-        XCTAssertEqual(view1?.renderedImage, .none, "Expected no image for seconde view while loading seconde image")
+        XCTAssertEqual(view1?.renderedImage, .none, "Expected no image for second view while loading second image")
         
         let imageData0 = UIImage.make(withColor: .red).pngData()!
         loader.completeImageLoading(with: imageData0, at: 0)
@@ -217,7 +217,7 @@ class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(loader.loadedImageURLs, [image0.url, image1.url, image0.url, image1.url], "Expected fourth imageURL request after second view retry action")
     }
     
-    func test_feedImageView_prealoadsImageURLWhenNearVisible() {
+    func test_feedImageView_preloadsImageURLWhenNearVisible() {
         let image0 = makeImage(url: URL(string: "https://url-0.com")!)
         let image1 = makeImage(url: URL(string: "https://url-1.com")!)
         let (sut, loader) = makeSUT()
