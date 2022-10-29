@@ -10,7 +10,7 @@ import EssentialFeed
 
 class LoadFeedFromRemoteUseCasesTests: XCTestCase {
 
-    func test_init_doesNotResquestDataFromURL() {
+    func test_init_doesNotRequestDataFromURL() {
         let (_, client) = makeSUT()
         
         XCTAssertTrue(client.requestedURLs.isEmpty)
@@ -57,7 +57,7 @@ class LoadFeedFromRemoteUseCasesTests: XCTestCase {
         }
     }
     
-    func test_load_deliversErronOn200HTTPResponseWithInvalidJSON() {
+    func test_load_deliversErroOn200HTTPResponseWithInvalidJSON() {
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWith: failure(.invalidData)) {
