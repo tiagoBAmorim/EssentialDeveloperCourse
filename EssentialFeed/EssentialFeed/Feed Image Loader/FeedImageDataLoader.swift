@@ -1,6 +1,6 @@
 //
 //  FeedImageDataLoader.swift
-//  EssentialFeediOS
+//  EssentialFeed
 //
 //  Created by tamorim on 14/10/2022.
 //
