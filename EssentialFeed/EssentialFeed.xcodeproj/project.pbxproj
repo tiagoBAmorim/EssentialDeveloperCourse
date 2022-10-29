@@ -87,8 +87,6 @@
 		5BF0883328DC498D002F6153 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0883228DC498D002F6153 /* CoreDataHelpers.swift */; };
 		5BF0883528DC4A0F002F6153 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0883428DC4A0F002F6153 /* ManagedCache.swift */; };
 		5BF0883728DC4A37002F6153 /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0883628DC4A37002F6153 /* ManagedFeedImage.swift */; };
-		5BF28C5328FFD99B00293D07 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF28C5228FFD99B00293D07 /* FeedImagePresenter.swift */; };
-		5BF28C5928FFDC0A00293D07 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF28C5828FFDC0A00293D07 /* FeedImageViewModel.swift */; };
 		5BF3FB1B290677A1001D1A6C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3FB1A290677A1001D1A6C /* MainQueueDispatchDecorator.swift */; };
 		5BF3FB1D29067813001D1A6C /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3FB1C29067813001D1A6C /* WeakRefVirtualProxy.swift */; };
 		5BF3FB1F29067865001D1A6C /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3FB1E29067865001D1A6C /* FeedViewAdapter.swift */; };
@@ -229,8 +227,6 @@
 		5BF0883228DC498D002F6153 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		5BF0883428DC4A0F002F6153 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		5BF0883628DC4A37002F6153 /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
-		5BF28C5228FFD99B00293D07 /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
-		5BF28C5828FFDC0A00293D07 /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 		5BF3FB1A290677A1001D1A6C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		5BF3FB1C29067813001D1A6C /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		5BF3FB1E29067865001D1A6C /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
@@ -464,7 +460,6 @@
 		5BAB32D128EEB5260094B90D /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				5BF72ED928FD3B8A00B0A45A /* Feed Presentation */,
 				5BC384F328F94DA200F41A21 /* Composers */,
 				5BC384EC28F93E7D00F41A21 /* Views */,
 				5BC384EB28F93E7100F41A21 /* Controllers */,
@@ -594,15 +589,6 @@
 				5B3D5BDF28DAEC9F00AB2218 /* CoreDataFeedStore.swift */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		5BF72ED928FD3B8A00B0A45A /* Feed Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				5BF28C5228FFD99B00293D07 /* FeedImagePresenter.swift */,
-				5BF28C5828FFDC0A00293D07 /* FeedImageViewModel.swift */,
-			);
-			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		5BF7C65028CA05D5000C6E7D /* Helpers */ = {
@@ -919,8 +905,6 @@
 				5BAB32E828EEB8620094B90D /* FeedViewController.swift in Sources */,
 				5BC02816290138670004D9B6 /* UITableView+Dequeueing.swift in Sources */,
 				5BC02818290139D40004D9B6 /* UIImageView+Animations.swift in Sources */,
-				5BF28C5928FFDC0A00293D07 /* FeedImageViewModel.swift in Sources */,
-				5BF28C5328FFD99B00293D07 /* FeedImagePresenter.swift in Sources */,
 				5BF3FB21290678B1001D1A6C /* FeedLoaderPresentationAdapter.swift in Sources */,
 				5BC384F228F9480F00F41A21 /* FeedImageCellController.swift in Sources */,
 				5B9BFA24290920E600D3EDE1 /* UIRefreshControl+Helpers.swift in Sources */,
