@@ -375,6 +375,7 @@
 				5B42A80928C878C800B29B47 /* FeedCache */,
 				5B86F0E728AD159E00794424 /* FeedApi */,
 				5B86F0E328ACC45E00794424 /* FeedFeature */,
+				5BC384EA28F93E5500F41A21 /* Feed Image Loader */,
 				5B1ED288290BC01F0072088F /* Feed Presentation */,
 				5B86F0C828ACC2F000794424 /* EssentialFeed.h */,
 				5B86F0C928ACC2F000794424 /* EssentialFeed.docc */,
@@ -463,7 +464,6 @@
 				5BC384F328F94DA200F41A21 /* Composers */,
 				5BC384EC28F93E7D00F41A21 /* Views */,
 				5BC384EB28F93E7100F41A21 /* Controllers */,
-				5BC384EA28F93E5500F41A21 /* Feed Image Loader */,
 				5BAB32D228EEB5260094B90D /* EssentialFeediOS.h */,
 				5BAB32D328EEB5260094B90D /* EssentialFeediOS.docc */,
 			);
