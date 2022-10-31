@@ -1,5 +1,5 @@
 //
-//  LocalFeedImageDataStore.swift
+//  LocalFeedImageDataLoader.swift
 //  EssentialFeed
 //
 //  Created by tamorim on 31/10/2022.
@@ -37,6 +37,12 @@ public class LocalFeedImageDataLoader: FeedImageDataLoader {
     
     public init(store: FeedImageDataStore) {
         self.store = store
+    }
+    
+    public typealias SaveResult = Result<Void, Swift.Error>
+    
+    public func save(_ data: Data, for url: URL, completion: @escaping (SaveResult) -> Void) {
+        store.insert(data, for: url) { _ in }
     }
     
     public func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
