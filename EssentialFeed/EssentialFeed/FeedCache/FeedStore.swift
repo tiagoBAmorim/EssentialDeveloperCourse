@@ -16,8 +16,8 @@ public protocol FeedStore {
     typealias InsertionResult = Result<Void, Error>
     typealias InsertionCompletion = (InsertionResult) -> Void
         
-    typealias RetrivalResult = Result<CachedFeed?, Error>
-    typealias RetrievalCompletions = (RetrivalResult) -> Void
+    typealias RetrievalResult = Result<CachedFeed?, Error>
+    typealias RetrievalCompletions = (RetrievalResult) -> Void
     
     /// The completion handler can be invoked in any thread.
     /// Clients are responsible to dispatch to appropriate threads, if needed.
