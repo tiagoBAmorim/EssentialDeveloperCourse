@@ -10,7 +10,7 @@ import EssentialFeed
 
 class LoadFeedFromRemoteUseCasesTests: XCTestCase {
 
-    func test_init_doesNotResquestDataFromURL() {
+    func test_init_doesNotRequestDataFromURL() {
         let (_, client) = makeSUT()
         
         XCTAssertTrue(client.requestedURLs.isEmpty)
@@ -57,7 +57,7 @@ class LoadFeedFromRemoteUseCasesTests: XCTestCase {
         }
     }
     
-    func test_load_deliversErronOn200HTTPResponseWithInvalidJSON() {
+    func test_load_deliversErroOn200HTTPResponseWithInvalidJSON() {
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWith: failure(.invalidData)) {
@@ -163,30 +163,5 @@ class LoadFeedFromRemoteUseCasesTests: XCTestCase {
         action()
         
         wait(for: [exp], timeout: 1.0)
-    }
-    
-    private class HTTPClientSpy: HTTPClient {
-        private var messages = [(url: URL, completion: (HTTPClient.Result) -> Void)]()
-        
-        var requestedURLs: [URL] {
-            return messages.map { $0.url }
-        }
-        
-        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
-            messages.append((url, completion))
-        }
-        
-        func complete(with error: Error, at index: Int = 0) {
-            messages[index].completion(.failure(error))
-        }
-        
-        func complete(withStatusCode code: Int, data: Data, at index: Int = 0) {
-            let response = HTTPURLResponse(url: requestedURLs[index],
-                                           statusCode: code,
-                                           httpVersion: nil,
-                                           headerFields: nil)!
-            
-            messages[index].completion(.success((data, response)))
-        }
     }
 }
