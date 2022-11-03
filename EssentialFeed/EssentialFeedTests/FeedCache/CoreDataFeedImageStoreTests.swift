@@ -35,7 +35,7 @@ class CoreDataFeedImageStoreTests: XCTestCase {
         
         expect(sut, toCompleteRetrievalWith: notFound(), for: nonMatchingURL)
     }
-     
+    
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
         let storeBundle = Bundle(for: CoreDataFeedStore.self)
         let storeURL = URL(fileURLWithPath: "/dev/null")
