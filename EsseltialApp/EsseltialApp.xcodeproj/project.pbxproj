@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B9F938E29150115003ED6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F938D29150115003ED6CC /* AppDelegate.swift */; };
+		5B9F939029150115003ED6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F938F29150115003ED6CC /* SceneDelegate.swift */; };
+		5B9F939229150115003ED6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F939129150115003ED6CC /* ViewController.swift */; };
+		5B9F939529150115003ED6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F939329150115003ED6CC /* Main.storyboard */; };
+		5B9F939729150116003ED6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F939629150116003ED6CC /* Assets.xcassets */; };
+		5B9F939A29150116003ED6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F939829150116003ED6CC /* LaunchScreen.storyboard */; };
+		5B9F93A529150117003ED6CC /* EsseltialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F93A429150117003ED6CC /* EsseltialAppTests.swift */; };
+		5B9F93AF29150117003ED6CC /* EsseltialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F93AE29150117003ED6CC /* EsseltialAppUITests.swift */; };
+		5B9F93B129150117003ED6CC /* EsseltialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F93B029150117003ED6CC /* EsseltialAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B9F93A129150117003ED6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9F938229150115003ED6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B9F938929150115003ED6CC;
+			remoteInfo = EsseltialApp;
+		};
+		5B9F93AB29150117003ED6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9F938229150115003ED6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B9F938929150115003ED6CC;
+			remoteInfo = EsseltialApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B9F938A29150115003ED6CC /* EsseltialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsseltialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F938D29150115003ED6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B9F938F29150115003ED6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5B9F939129150115003ED6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B9F939429150115003ED6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B9F939629150116003ED6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B9F939929150116003ED6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B9F939B29150116003ED6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9F93A029150117003ED6CC /* EsseltialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsseltialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F93A429150117003ED6CC /* EsseltialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsseltialAppTests.swift; sourceTree = "<group>"; };
+		5B9F93AA29150117003ED6CC /* EsseltialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsseltialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F93AE29150117003ED6CC /* EsseltialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsseltialAppUITests.swift; sourceTree = "<group>"; };
+		5B9F93B029150117003ED6CC /* EsseltialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsseltialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B9F938729150115003ED6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F939D29150117003ED6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F93A729150117003ED6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B9F938129150115003ED6CC = {
+			isa = PBXGroup;
+			children = (
+				5B9F938C29150115003ED6CC /* EsseltialApp */,
+				5B9F93A329150117003ED6CC /* EsseltialAppTests */,
+				5B9F93AD29150117003ED6CC /* EsseltialAppUITests */,
+				5B9F938B29150115003ED6CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B9F938B29150115003ED6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F938A29150115003ED6CC /* EsseltialApp.app */,
+				5B9F93A029150117003ED6CC /* EsseltialAppTests.xctest */,
+				5B9F93AA29150117003ED6CC /* EsseltialAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B9F938C29150115003ED6CC /* EsseltialApp */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F938D29150115003ED6CC /* AppDelegate.swift */,
+				5B9F938F29150115003ED6CC /* SceneDelegate.swift */,
+				5B9F939129150115003ED6CC /* ViewController.swift */,
+				5B9F939329150115003ED6CC /* Main.storyboard */,
+				5B9F939629150116003ED6CC /* Assets.xcassets */,
+				5B9F939829150116003ED6CC /* LaunchScreen.storyboard */,
+				5B9F939B29150116003ED6CC /* Info.plist */,
+			);
+			path = EsseltialApp;
+			sourceTree = "<group>";
+		};
+		5B9F93A329150117003ED6CC /* EsseltialAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F93A429150117003ED6CC /* EsseltialAppTests.swift */,
+			);
+			path = EsseltialAppTests;
+			sourceTree = "<group>";
+		};
+		5B9F93AD29150117003ED6CC /* EsseltialAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F93AE29150117003ED6CC /* EsseltialAppUITests.swift */,
+				5B9F93B029150117003ED6CC /* EsseltialAppUITestsLaunchTests.swift */,
+			);
+			path = EsseltialAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B9F938929150115003ED6CC /* EsseltialApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F93B429150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialApp" */;
+			buildPhases = (
+				5B9F938629150115003ED6CC /* Sources */,
+				5B9F938729150115003ED6CC /* Frameworks */,
+				5B9F938829150115003ED6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EsseltialApp;
+			productName = EsseltialApp;
+			productReference = 5B9F938A29150115003ED6CC /* EsseltialApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B9F939F29150117003ED6CC /* EsseltialAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F93B729150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialAppTests" */;
+			buildPhases = (
+				5B9F939C29150117003ED6CC /* Sources */,
+				5B9F939D29150117003ED6CC /* Frameworks */,
+				5B9F939E29150117003ED6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B9F93A229150117003ED6CC /* PBXTargetDependency */,
+			);
+			name = EsseltialAppTests;
+			productName = EsseltialAppTests;
+			productReference = 5B9F93A029150117003ED6CC /* EsseltialAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B9F93A929150117003ED6CC /* EsseltialAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F93BA29150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialAppUITests" */;
+			buildPhases = (
+				5B9F93A629150117003ED6CC /* Sources */,
+				5B9F93A729150117003ED6CC /* Frameworks */,
+				5B9F93A829150117003ED6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B9F93AC29150117003ED6CC /* PBXTargetDependency */,
+			);
+			name = EsseltialAppUITests;
+			productName = EsseltialAppUITests;
+			productReference = 5B9F93AA29150117003ED6CC /* EsseltialAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B9F938229150115003ED6CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					5B9F938929150115003ED6CC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					5B9F939F29150117003ED6CC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 5B9F938929150115003ED6CC;
+					};
+					5B9F93A929150117003ED6CC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 5B9F938929150115003ED6CC;
+					};
+				};
+			};
+			buildConfigurationList = 5B9F938529150115003ED6CC /* Build configuration list for PBXProject "EsseltialApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B9F938129150115003ED6CC;
+			productRefGroup = 5B9F938B29150115003ED6CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B9F938929150115003ED6CC /* EsseltialApp */,
+				5B9F939F29150117003ED6CC /* EsseltialAppTests */,
+				5B9F93A929150117003ED6CC /* EsseltialAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B9F938829150115003ED6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F939A29150116003ED6CC /* LaunchScreen.storyboard in Resources */,
+				5B9F939729150116003ED6CC /* Assets.xcassets in Resources */,
+				5B9F939529150115003ED6CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F939E29150117003ED6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F93A829150117003ED6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B9F938629150115003ED6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F939229150115003ED6CC /* ViewController.swift in Sources */,
+				5B9F938E29150115003ED6CC /* AppDelegate.swift in Sources */,
+				5B9F939029150115003ED6CC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F939C29150117003ED6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F93A529150117003ED6CC /* EsseltialAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F93A629150117003ED6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F93AF29150117003ED6CC /* EsseltialAppUITests.swift in Sources */,
+				5B9F93B129150117003ED6CC /* EsseltialAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B9F93A229150117003ED6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B9F938929150115003ED6CC /* EsseltialApp */;
+			targetProxy = 5B9F93A129150117003ED6CC /* PBXContainerItemProxy */;
+		};
+		5B9F93AC29150117003ED6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B9F938929150115003ED6CC /* EsseltialApp */;
+			targetProxy = 5B9F93AB29150117003ED6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B9F939329150115003ED6CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9F939429150115003ED6CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B9F939829150116003ED6CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9F939929150116003ED6CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B9F93B229150117003ED6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B9F93B329150117003ED6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B9F93B529150117003ED6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsseltialApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B9F93B629150117003ED6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsseltialApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B9F93B829150117003ED6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsseltialApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsseltialApp";
+			};
+			name = Debug;
+		};
+		5B9F93B929150117003ED6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsseltialApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsseltialApp";
+			};
+			name = Release;
+		};
+		5B9F93BB29150117003ED6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EsseltialApp;
+			};
+			name = Debug;
+		};
+		5B9F93BC29150117003ED6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79N987WTJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EsseltialAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EsseltialApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B9F938529150115003ED6CC /* Build configuration list for PBXProject "EsseltialApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F93B229150117003ED6CC /* Debug */,
+				5B9F93B329150117003ED6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B9F93B429150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F93B529150117003ED6CC /* Debug */,
+				5B9F93B629150117003ED6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B9F93B729150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F93B829150117003ED6CC /* Debug */,
+				5B9F93B929150117003ED6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B9F93BA29150117003ED6CC /* Build configuration list for PBXNativeTarget "EsseltialAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F93BB29150117003ED6CC /* Debug */,
+				5B9F93BC29150117003ED6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B9F938229150115003ED6CC /* Project object */;
+}
