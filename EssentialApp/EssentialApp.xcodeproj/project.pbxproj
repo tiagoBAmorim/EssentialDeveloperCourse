@@ -20,6 +20,7 @@
 		5B82E88129150574000F4D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82E87F29150574000F4D6F /* Main.storyboard */; };
 		5B82E88329150576000F4D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82E88229150576000F4D6F /* Assets.xcassets */; };
 		5B82E88629150576000F4D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82E88429150576000F4D6F /* LaunchScreen.storyboard */; };
+		5BD06558291A421300642446 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD06557291A421300642446 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		5B82E88529150576000F4D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B82E88729150576000F4D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B82E88C29150576000F4D6F /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD06557291A421300642446 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				5B82E88429150576000F4D6F /* LaunchScreen.storyboard */,
 				5B82E88729150576000F4D6F /* Info.plist */,
 				5B696B2929194373001F25D9 /* FeedLoaderWithFallbackComposite.swift */,
+				5BD06557291A421300642446 /* FeedImageDataLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				5B82E87A29150574000F4D6F /* AppDelegate.swift in Sources */,
 				5B696B2A29194373001F25D9 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				5B82E87C29150574000F4D6F /* SceneDelegate.swift in Sources */,
+				5BD06558291A421300642446 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
