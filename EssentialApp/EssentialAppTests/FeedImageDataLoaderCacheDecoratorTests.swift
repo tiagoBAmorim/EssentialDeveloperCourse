@@ -68,8 +68,8 @@ final class FeedImageDataLoaderCacheDecoratorTests: XCTestCase {
 
      // MARK: - Helpers
          
-     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: FeedImageDataLoader, loader: LoaderSpy) {
-         let loader = LoaderSpy()
+     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: FeedImageDataLoader, loader: FeedImageDataLoaderSpy) {
+         let loader = FeedImageDataLoaderSpy()
          let sut = FeedImageDataLoaderCacheDecorator(decoratee: loader)
          trackForMemoryLeaks(loader, file: file, line: line)
          trackForMemoryLeaks(sut, file: file, line: line)
@@ -99,7 +99,7 @@ final class FeedImageDataLoaderCacheDecoratorTests: XCTestCase {
          wait(for: [exp], timeout: 1.0)
      }
 
-     private class LoaderSpy: FeedImageDataLoader {
+     private class FeedImageDataLoaderSpy: FeedImageDataLoader {
          private var messages = [(url: URL, completion: (FeedImageDataLoader.Result) -> Void)]()
 
          private(set) var cancelledURLs = [URL]()
