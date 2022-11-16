@@ -39,6 +39,12 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
         errorView?.message = viewModel.message
     }
     
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tableView.sizeTableHeaderToFit()
+    }
+    
     @IBAction private func refresh() {
         delegate?.didRequestRefresh()
     }
