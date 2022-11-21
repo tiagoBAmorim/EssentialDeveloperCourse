@@ -303,6 +303,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B02E633292BFF2D00B167F9 /* Image Commets Api */ = {
+			isa = PBXGroup;
+			children = (
+				5B6662D1292B66A400A86C3F /* ImageCommentsMapper.swift */,
+				5B6662CF292B659800A86C3F /* RemoteImageCommentsLoader.swift */,
+			);
+			path = "Image Commets Api";
+			sourceTree = "<group>";
+		};
 		5B0665DD28B1515900B2B4E1 /* FeedApi */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +459,7 @@
 				5B6662D7292B722F00A86C3F /* Shared API Infra */,
 				5B6662D6292B720500A86C3F /* Shrared API */,
 				5B6662D3292B6BAA00A86C3F /* Image Comments Feature */,
+				5B02E633292BFF2D00B167F9 /* Image Commets Api */,
 				5BF0882F28DC491E002F6153 /* Infrastructure */,
 				5B42A80928C878C800B29B47 /* FeedCache */,
 				5B86F0E728AD159E00794424 /* FeedApi */,
@@ -494,8 +504,6 @@
 				5B0665DB28B13DAB00B2B4E1 /* FeedItemsMapper.swift */,
 				5B03E01B28C9CE630003E0DA /* RemoteFeedItem.swift */,
 				5BE711BE291046E60093C5B7 /* RemoteFeedImageDataLoader.swift */,
-				5B6662CF292B659800A86C3F /* RemoteImageCommentsLoader.swift */,
-				5B6662D1292B66A400A86C3F /* ImageCommentsMapper.swift */,
 			);
 			path = FeedApi;
 			sourceTree = "<group>";
