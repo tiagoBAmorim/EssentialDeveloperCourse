@@ -69,8 +69,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         return localImageLoader
             .loadImageDataPublisher(from: url)
-            .fallback(to: {
-                remoteImageLoader
+            .fallback(to: { [httpClient]
+                httpClient
+                    .getPublisher(url: url)
+                    .tryMap(FeedItemsMapper.map)
                     .loadImageDataPublisher(from: url)
                     .caching(to: localImageLoader, using: url)
             })
